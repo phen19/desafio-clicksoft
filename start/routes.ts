@@ -26,4 +26,5 @@ Route.group(() => {
   })
   Route.resource('/students', 'StudentsController').apiOnly()
   Route.resource('/teachers', 'TeachersController').apiOnly()
+  Route.resource('/rooms', 'RoomsController').apiOnly()
 }).prefix('/api')
