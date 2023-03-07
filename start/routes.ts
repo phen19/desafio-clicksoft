@@ -27,4 +27,6 @@ Route.group(() => {
   Route.resource('/students', 'StudentsController').apiOnly()
   Route.resource('/teachers', 'TeachersController').apiOnly()
   Route.resource('/rooms', 'RoomsController').apiOnly()
+  Route.resource('/enrollments', 'EnrollmentsController').apiOnly()
+  Route.get('roomsBystudent/:id', 'EnrollmentsController.findAllRoomsByStudent')
 }).prefix('/api')
